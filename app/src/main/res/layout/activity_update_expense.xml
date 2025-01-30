@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addExpense"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:color="#FFFFFF"
+    tools:context=".AddExpenseActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/activityTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="지출 내역 수정"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="559dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="146dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="60dp"
+                    android:paddingRight="10dp"
+                    android:text="은행:"
+                    android:textAlignment="textEnd"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:paddingRight="10dp"
+                    android:text="계좌:"
+                    android:textAlignment="textEnd"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:paddingRight="10dp"
+                    android:text="거래 날짜:"
+                    android:textAlignment="textEnd"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:paddingRight="10dp"
+                    android:text="카테고리:"
+                    android:textAlignment="textEnd"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:paddingRight="10dp"
+                    android:text="상점명:"
+                    android:textAlignment="textEnd"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:paddingRight="10dp"
+                    android:text="지출액:"
+                    android:textAlignment="textEnd"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="249dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerBank"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edTextAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:ems="10"
+                    android:hint="ex) 000-000-0000"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/edTextDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:ems="10"
+                    android:hint="ex) yyyymmdd"
+                    android:inputType="date" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edTextStore"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:ems="10"
+                    android:hint="상점명 혹은 카테고리 재입력"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/edTextAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:ems="10"
+                    android:hint="ex) 9000"
+                    android:inputType="number" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#2196F3"
+                android:text="뒤로가기"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#2196F3"
+                android:text="수정하기"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

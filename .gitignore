@@ -1,0 +1,58 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Gradle related files
+.gradle/
+**/build/
+!gradle-wrapper.jar
+gradle.properties
+gradlew
+gradlew.bat
+settings.gradle.kts
+gradle/*
+
+# Local configuration files
+/local.properties
+/.idea/
+/out/
+
+# Logs and crash reports
+*.log
+crashlytics-build.log
+
+# Android Studio generated files
+/captures/
+/.idea/*
+/.idea/caches/
+/.idea/libraries/
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/.idea/misc.xml
+/.idea/vcs.xml
+
+# Keystore files (if any)
+*.keystore
+*.jks
+
+# Generated files
+/res/generated/
+/build/generated/
+.externalNativeBuild
+.cxx
+
+# Exclude specific files
+**/AndroidManifest.xml
+**/strings.xml
+**/TMapRefService.kt
+
+# System files
+.DS_Store
+
+# Other IDE-specific files
+*.iml
+
+# build
+build.gradle.kts
